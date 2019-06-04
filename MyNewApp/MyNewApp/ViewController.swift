@@ -18,79 +18,28 @@ class ViewController: UIViewController {
 
     public func thisIsANastyFunction() {
         let myProp: String = "My new string"
-
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
-        }
+        print(otherFunction(myProp))
     }
 
-    public func thisIsALongAndRepeatedFunction() {
+    public func thisIsNotLongAndRepeatedFunction() {
         let myProp: String = "My new string"
 
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                    print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
-        }
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                    print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
-        }
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                    print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
-        }
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                    print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
-        }
-        if !myProp.isEmpty {
-            if myProp == "My old string" {
-                print(myProp)
-            } else {
-                if myProp.index(myProp.startIndex, offsetBy: 2) == "s" {
-                    print("\(myProp) is right")
-                } else {
-                    print(myProp)
-                }
-            }
+        if !myProp.isEmpty && myProp == "My old string" {
+            print(myProp)
+        } else {
+            print(otherFunction(myProp))
         }
     }
 
+    private func otherFunction(_ myProp: String) -> String {
+        guard let index = myProp.lastIndex(of: "g") else {
+            return ""
+        }
+        if myProp.index(myProp.startIndex, offsetBy: 2) < index {
+            return "\(myProp) is right"
+        } else {
+            return myProp
+        }
+    }
 }
 
