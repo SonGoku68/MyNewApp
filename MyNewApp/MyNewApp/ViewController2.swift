@@ -13,6 +13,7 @@ class ViewController2: ViewController {
     override func viewDidLoad() {
          super .viewDidLoad()
         thisIsAnotherLongAndRepeatedFunction()
+        thisIsALongAndRepeatedFunction()
     }
 
     func thisIsAnotherLongAndRepeatedFunction() {
@@ -22,6 +23,16 @@ class ViewController2: ViewController {
             print(myProp)
         } else {
             print("\(myProp) is right")
+        }
+    }
+
+    func thisIsALongAndRepeatedFunction() {
+        let myProper: String = "My old string"
+
+        if myProper.isEmpty && myProper == "My old string" {
+            print(myProper)
+        } else {
+            print("\(myProper) is right")
         }
     }
 }
