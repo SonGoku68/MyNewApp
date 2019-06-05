@@ -12,7 +12,7 @@ class ViewController2: ViewController {
 
     override func viewDidLoad() {
          super .viewDidLoad()
-        thisIsAGreatFunction()
+        thisIsAnotherLongAndRepeatedFunction()
     }
 
     func thisIsAnotherLongAndRepeatedFunction() {
