@@ -25,7 +25,7 @@ workflows:
           but not if the step is included in another bitrise.yml!
         run_if: true
         inputs:
-        - path: ./_tmp
+        - path: ./tmp
         - is_create_path: true
     - git-clone:
         title: Git clone codecov sample project
