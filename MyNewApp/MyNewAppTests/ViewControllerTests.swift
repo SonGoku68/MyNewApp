@@ -21,4 +21,18 @@ class ViewControllerTests: XCTestCase {
 
         XCTAssertEqual(vc.thisIsAVeryLongFunction(), "My new string")
     }
+
+    func testIsReturningNotRightString() {
+        let vc = ViewController2()
+        _ = vc.view
+
+        XCTAssertEqual(vc.thisIsAnotherLongAndRepeatedFunction(), "My new string is right")
+    }
+
+    func testIsReturningNotRightStringAgain() {
+        let vc = ViewController2()
+        _ = vc.view
+
+        XCTAssertEqual(vc.thisIsALongAndRepeatedFunction(), "My old string is right")
+    }
 }

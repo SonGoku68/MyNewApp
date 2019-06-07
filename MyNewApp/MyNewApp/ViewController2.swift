@@ -12,27 +12,27 @@ class ViewController2: ViewController {
 
     override func viewDidLoad() {
          super .viewDidLoad()
-        thisIsAnotherLongAndRepeatedFunction()
-        thisIsALongAndRepeatedFunction()
+        _ = thisIsAnotherLongAndRepeatedFunction()
+        _ = thisIsALongAndRepeatedFunction()
     }
 
-    func thisIsAnotherLongAndRepeatedFunction() {
+    public func thisIsAnotherLongAndRepeatedFunction() -> String {
         let myProp: String = "My new string"
 
         if !myProp.isEmpty && myProp == "My old string" {
-            print(myProp)
+            return myProp
         } else {
-            print("\(myProp) is right")
+             return "\(myProp) is right"
         }
     }
 
-    func thisIsALongAndRepeatedFunction() {
+    public func thisIsALongAndRepeatedFunction() -> String {
         let myProper: String = "My old string"
 
         if myProper.isEmpty && myProper == "My old string" {
-            print(myProper)
+            return myProper
         } else {
-            print("\(myProper) is right")
+            return "\(myProper) is right"
         }
     }
 }
