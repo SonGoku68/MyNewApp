@@ -3,7 +3,7 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
   envs:
-  - SAMPLE_APP_REPOSITORY_URL: https://github.com/bitrise-samples/example-swift.git
+  - SAMPLE_APP_REPOSITORY_URL: https://github.com/SonGoku68/MyNewApp.git
   # define these in your .bitrise.secrets.yml
   - CODECOV_TOKEN: $CODECOV_TOKEN
   - OPTIONS: $OPTIONS
@@ -25,7 +25,7 @@ workflows:
           but not if the step is included in another bitrise.yml!
         run_if: true
         inputs:
-        - path: ./coverage
+        - path: ./_tmp
         - is_create_path: true
     - git-clone:
         title: Git clone codecov sample project
