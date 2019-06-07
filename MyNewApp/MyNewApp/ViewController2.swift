@@ -12,8 +12,8 @@ class ViewController2: ViewController {
 
     override func viewDidLoad() {
          super .viewDidLoad()
-        _ = thisIsAnotherLongAndRepeatedFunction()
-        _ = thisIsALongAndRepeatedFunction()
+        print(thisIsAnotherLongAndRepeatedFunction())
+        print(thisIsALongAndRepeatedFunction())
     }
 
     public func thisIsAnotherLongAndRepeatedFunction() -> String {
