@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/SonGoku68/MyNewApp/branch/master/graph/badge.svg)](https://codecov.io/gh/SonGoku68/MyNewApp)
+
 # Codecov integration
 
 [Codecov](https://codecov.io) integration
