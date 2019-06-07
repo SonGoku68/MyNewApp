@@ -22,7 +22,7 @@ class ViewController2: ViewController {
         if !myProp.isEmpty && myProp == "My old string" {
             return myProp
         } else {
-             return "\(myProp) is right"
+             return myProp
         }
     }
 
@@ -32,7 +32,7 @@ class ViewController2: ViewController {
         if myProper.isEmpty && myProper == "My old string" {
             return myProper
         } else {
-            return "\(myProper) is right"
+            return myProper
         }
     }
 }
