@@ -54,4 +54,5 @@ workflows:
         inputs:
         - CODECOV_TOKEN: $CODECOV_TOKEN
         - other_options: $OPTIONS
+    - sonarqube-scanner@1.0.6: 
         

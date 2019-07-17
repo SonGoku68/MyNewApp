@@ -25,5 +25,26 @@ class ViewController: UIViewController {
         return ""
     }
 
+    public func thisIsAVeryVeryLongFunction() -> String {
+        let myProp: String = "My new string"
+
+        if !myProp.isEmpty {
+            return myProp
+        } else if myProp.isEmpty {
+            return "again"
+        } else {
+            if myProp.count > 2 {
+                if myProp.count > 3 {
+                    if myProp.count > 5 {
+                        if myProp.count > 7 {
+                            return "the last"
+                        }
+                    }
+                }
+            }
+        }
+        return ""
+    }
+
 }
 
